@@ -163,7 +163,7 @@
     </div>
     <div class="a">
       <p3>
-        Yashvinder Hooda @2025
+        <p>Yashvinder Hooda @<span id="current-year"></span></p>
       </p3>
     </div>
 
@@ -191,5 +191,8 @@
       <div class="container">
       </div>
     </footer>
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
