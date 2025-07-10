@@ -10,6 +10,29 @@ body {
   font-weight: bold;
 }
 
+/* Ensure navigation is visible */
+.navbar-collapse {
+  display: block !important;
+}
+
+.navbar-nav > li > a {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.navbar-nav > li > a:hover {
+  color: #007acc !important;
+  background-color: transparent !important;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
 .blog-header {
   text-align: center;
   margin-bottom: 40px;
