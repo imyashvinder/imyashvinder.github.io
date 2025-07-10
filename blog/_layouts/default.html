@@ -13,15 +13,9 @@
   <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   
-  <!-- Preload critical CSS -->
-  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript>
-  
-  <!-- Load non-critical CSS asynchronously -->
-  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
-  
-  <!-- Load custom CSS immediately to ensure blinking cursor works -->
+  <!-- Load CSS synchronously to ensure everything works -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/beautifuljekyll.css">
 </head>
 <body>
@@ -66,14 +60,14 @@
   <script src="{{ site.baseurl }}/assets/js/beautifuljekyll.js" defer></script>
   
   <script>
-    // Register service worker for caching
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => console.log('SW registered'))
-          .catch(error => console.log('SW registration failed'));
-      });
-    }
+    // Temporarily disabled service worker to eliminate 404 errors
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', () => {
+    //     navigator.serviceWorker.register('/sw.js')
+    //       .then(registration => console.log('SW registered'))
+    //       .catch(error => console.log('SW registration failed: ' + error));
+    //   });
+    // }
   </script>
 </body>
 </html> 
