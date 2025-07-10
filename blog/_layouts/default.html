@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/beautifuljekyll.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          {% if site.navbar-links %}
+            {% for link in site.navbar-links %}
+              {% if link[1] contains '://' %}
+                <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+              {% else %}
+                <li><a href="{{ link[1] | prepend: site.baseurl }}">{{ link[0] }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">
+        &copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/beautifuljekyll.js"></script>
+</body>
+</html> 

@@ -1,22 +1,29 @@
-# Ignore local build output
-blog_src/_site/
-
-# Ignore generated site output
-#/blog/
-
-# Ignore Jekyll caches
-.jekyll-cache/
+# Jekyll build output
+_site/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Ignore system files
+# Bundler
+.bundle/
+vendor/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# OS generated files
 .DS_Store
+Thumbs.db
 
-# Ignore Ruby stuff you don’t want in the repo
-*.gem
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
 
-# Ignore node modules if you use npm for any assets
+# Node modules (if you ever add JS tooling)
 node_modules/
-
-# Ignore virtual environments (Python) if you’re using venv
-venv*/
 
