@@ -1,6 +1,8 @@
-_site
+# Ignore local build output
+blog_src/_site/
+
 # Ignore generated site output
-/blog/
+#/blog/
 
 # Ignore Jekyll caches
 .jekyll-cache/
