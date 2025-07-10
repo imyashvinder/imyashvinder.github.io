@@ -60,14 +60,14 @@
   <script src="{{ site.baseurl }}/assets/js/beautifuljekyll.js" defer></script>
   
   <script>
-    // Temporarily disabled service worker to eliminate 404 errors
-    // if ('serviceWorker' in navigator) {
-    //   window.addEventListener('load', () => {
-    //     navigator.serviceWorker.register('/sw.js')
-    //       .then(registration => console.log('SW registered'))
-    //       .catch(error => console.log('SW registration failed: ' + error));
-    //   });
-    // }
+    // Register service worker for blog caching
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/blog/sw.js')
+          .then(registration => console.log('Blog SW registered'))
+          .catch(error => console.log('Blog SW registration failed: ' + error));
+      });
+    }
   </script>
 </body>
 </html> 
