@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "/blog"
 url: "https://imyashvinder.github.io/"
 # remote_theme: daattali/beautiful-jekyll
 
