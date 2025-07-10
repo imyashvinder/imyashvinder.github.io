@@ -25,6 +25,16 @@ body {
   background-color: transparent !important;
 }
 
+.blinking-cursor {
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 .navbar-toggle {
   border: none;
 }
