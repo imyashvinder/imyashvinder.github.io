@@ -30,9 +30,35 @@ body {
   animation: blink 1s infinite;
 }
 
+.mobile-cursor {
+  display: none;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+/* Mobile responsive navigation */
+@media (max-width: 768px) {
+  .mobile-cursor {
+    display: block;
+  }
+  
+  .navbar-collapse {
+    display: none !important;
+  }
+  
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .navbar-toggle {
