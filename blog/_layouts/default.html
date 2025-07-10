@@ -12,6 +12,8 @@
   <!-- DNS prefetch for external CDNs -->
   <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
   
   <!-- Load CSS synchronously to ensure everything works -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -68,6 +70,15 @@
           .catch(error => console.log('Blog SW registration failed: ' + error));
       });
     }
+  </script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYFJPF2VG6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GYFJPF2VG6');
   </script>
 </body>
 </html> 

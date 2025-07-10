@@ -13,6 +13,8 @@
   
   <!-- DNS prefetch for external domains -->
   <link rel="dns-prefetch" href="//raw.githubusercontent.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
   <style>
     * {
       margin: 0;
@@ -380,6 +382,15 @@
             .catch(error => console.log('Main SW registration failed: ' + error));
         });
       }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYFJPF2VG6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GYFJPF2VG6');
     </script>
   </div>
 </body>

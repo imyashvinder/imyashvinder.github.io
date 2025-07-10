@@ -39,6 +39,10 @@ jobs:
         run: |
           cp index.html _site/
           cp profile-small.png _site/
+          cp sw.js _site/
+          cp robots.txt _site/
+          cp _headers _site/
+          cp -r .well-known _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
