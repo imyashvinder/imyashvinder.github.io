@@ -1,6 +1,20 @@
-_site/
+_site
+# Ignore generated site output
+/blog/
+
+# Ignore Jekyll caches
 .jekyll-cache/
 .sass-cache/
-*.gem
+
+# Ignore system files
 .DS_Store
+
+# Ignore Ruby stuff you don’t want in the repo
+*.gem
+
+# Ignore node modules if you use npm for any assets
 node_modules/
+
+# Ignore virtual environments (Python) if you’re using venv
+venv*/
+
