@@ -1,1 +1,6 @@
-blog/_site
+_site/
+.jekyll-cache/
+.sass-cache/
+*.gem
+.DS_Store
+node_modules/
