@@ -1,22 +1,20 @@
 ---
 layout: post
-title: "Welcome to My Blog"
-subtitle: "A journey of wins, misses, mistakes, and heart"
-date: 2024-01-15
+title: "Bike Mania"
+subtitle: "A random trip to Cameron Highlands"
+date: xxxx-0x-1x
 author: Yash
 tags: [welcome, introduction]
 ---
 
-Welcome to my blog! This is where I'll be sharing my thoughts, experiences, and insights about technology, life, and everything in between.
+Welcome to this first post! This is where I'll be sharing my thoughts, experiences, and insights about technology, life, and everything in between.
 
 ## What to Expect
 
 I'll be writing about:
-- Cloud engineering and DevOps practices
-- Linux and scripting adventures
-- Travel experiences and life lessons
-- Cricket and other passions
-- Professional growth and learning
+- Road Trips
+- Bikes
+
 
 ## About Me
 
