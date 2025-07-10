@@ -32,9 +32,13 @@ jobs:
         run: |
           cd blog
           bundle install
-          bundle exec jekyll build --destination ../_site
+          bundle exec jekyll build --destination ../_site/blog
         env:
           JEKYLL_ENV: production
+      - name: Copy main site files
+        run: |
+          cp index.html _site/
+          cp profile-small.png _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
