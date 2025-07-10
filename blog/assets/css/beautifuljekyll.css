@@ -10,6 +10,24 @@ body {
   font-weight: bold;
 }
 
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.blog-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-header .lead {
+  color: #666;
+  font-size: 18px;
+}
+
 .post {
   margin-bottom: 40px;
 }
@@ -128,4 +146,23 @@ body {
   padding: 20px 0;
   background: #f8f9fa;
   border-top: 1px solid #eee;
+}
+
+.pager {
+  margin-top: 30px;
+}
+
+.pager a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.pager a:hover {
+  background: #005a9e;
+  text-decoration: none;
 } 

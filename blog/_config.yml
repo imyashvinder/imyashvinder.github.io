@@ -1,16 +1,15 @@
 baseurl: ""
 url: "https://imyashvinder.github.io/"
-remote_theme: daattali/beautiful-jekyll
+# remote_theme: daattali/beautiful-jekyll
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
 
 # Site settings (customize!)
-title: "Stories in Motion"
-description: "wins, misses, mistakes, and heart"
-author: "Yash"
+title: "Yashvinder Hooda"
+description: "Cloud Engineer, Cricket Enthusiast, Traveler"
+author: "Yashvinder Hooda"
 
 avatar: "/assets/img/avatar-icon.png"
 round-avatar: true
