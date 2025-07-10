@@ -7,8 +7,8 @@ plugins:
   - jekyll-sitemap
 
 # Site settings (customize!)
-title: "Yashvinder Hooda"
-description: "Cloud Engineer, Cricket Enthusiast, Traveler"
+title: "Stories in Motion"
+description: "A journey of wins, misses, mistakes, and heart"
 author: "Yashvinder Hooda"
 
 avatar: "/assets/img/avatar-icon.png"
