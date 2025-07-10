@@ -27,3 +27,23 @@ Thumbs.db
 # Node modules (if you ever add JS tooling)
 node_modules/
 
+# Security and sensitive files
+.env
+.env.local
+.env.production
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+config/secrets.yml
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+temp/
+tmp/
+
