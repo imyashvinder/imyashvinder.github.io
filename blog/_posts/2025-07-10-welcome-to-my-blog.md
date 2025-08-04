@@ -31,7 +31,7 @@ Recently, I embarked on an exciting motorbike journey from Kuala Lumpur to Camer
 <picture>
   <source srcset="/blog/assets/images/mountain-roads.avif" type="image/avif">
   <source srcset="/blog/assets/images/mountain-roads.webp" type="image/webp">
-  <img src="/blog/assets/images/mountain-roads.jpg" alt="Mountain roads" loading="lazy">
+  <img src="/blog/assets/images/mountain-roads.webp" alt="Mountain roads" loading="lazy">
 </picture>
 *The winding roads through the mountains offered breathtaking views at every turn.*
 
