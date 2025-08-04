@@ -39,7 +39,7 @@ Recently, I embarked on an exciting motorbike journey from Kuala Lumpur to Camer
 <picture>
   <source srcset="/blog/assets/images/tea-plantations.avif" type="image/avif">
   <source srcset="/blog/assets/images/tea-plantations.webp" type="image/webp">
-  <img src="/blog/assets/images/tea-plantations.HEIC" alt="Cameron Highlands tea plantations" loading="lazy">
+  <img src="/blog/assets/images/tea-plantations.webp" alt="Cameron Highlands tea plantations" loading="lazy">
 </picture>
 *The famous tea plantations of Cameron Highlands - a sight that makes the entire journey worthwhile.*
 
@@ -47,7 +47,7 @@ Recently, I embarked on an exciting motorbike journey from Kuala Lumpur to Camer
 <picture>
   <source srcset="/blog/assets/images/rest-stop.avif" type="image/avif">
   <source srcset="/blog/assets/images/rest-stop.webp" type="image/webp">
-  <img src="/blog/assets/images/rest-stop.HEIC" alt="Rest stop with bike" loading="lazy">
+  <img src="/blog/assets/images/rest-stop.webp" alt="Rest stop with bike" loading="lazy">
 </picture>
 *Sometimes the best memories are made during the unplanned stops along the way.*
 
@@ -55,7 +55,7 @@ Recently, I embarked on an exciting motorbike journey from Kuala Lumpur to Camer
 <picture>
   <source srcset="/blog/assets/images/cameron-view.avif" type="image/avif">
   <source srcset="/blog/assets/images/cameron-view.webp" type="image/webp">
-  <img src="/blog/assets/images/cameron-view.HEIC" alt="Cameron Highlands view" loading="lazy">
+  <img src="/blog/assets/images/cameron-view.webp" alt="Cameron Highlands view" loading="lazy">
 </picture>
 *The cool mountain air and stunning vistas of Cameron Highlands - the perfect reward for the journey.*
 
@@ -65,8 +65,6 @@ Recently, I embarked on an exciting motorbike journey from Kuala Lumpur to Camer
 - **Best Part**: The winding mountain roads and cool climate
 - **Challenge**: Heavy cruiser bike on steep inclines
 - **Reward**: Spectacular views and the satisfaction of completing the journey
-
-*Note: To add your actual photos, simply place them in the `blog/assets/images/` folder with the filenames mentioned above, or update the image paths to match your actual photo names.*
 
 Do not stay tuned for more posts!
 
