@@ -6,6 +6,63 @@ body {
   padding-top: 70px;
 }
 
+/* Responsive images */
+.post-content picture,
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-content picture {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.post-content img {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Hover effect for images */
+.post-content picture:hover,
+.post-content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure images don't overflow on very large screens */
+@media (min-width: 1200px) {
+  .post-content picture,
+  .post-content img {
+    max-width: 900px;
+  }
+}
+
+/* Mobile responsive images */
+@media (max-width: 768px) {
+  .post-content picture,
+  .post-content img {
+    max-width: 100%;
+    margin: 15px auto;
+  }
+}
+
+/* Image captions */
+.post-content picture + em,
+.post-content img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
 .navbar-brand {
   font-weight: bold;
 }
